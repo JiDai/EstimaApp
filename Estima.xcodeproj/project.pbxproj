@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8B0B82832007642C00DE76C2 /* splash-screen__logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B0B82822007642C00DE76C2 /* splash-screen__logo.png */; };
-		8B0B82862007675300DE76C2 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B0B82852007675200DE76C2 /* WebKit.framework */; };
+		8B1A64632008018C00F282B6 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8BB057CA20015A5400F6A97D /* Info.plist */; };
 		8BB057BF20015A5400F6A97D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB057BE20015A5400F6A97D /* AppDelegate.swift */; };
 		8BB057C120015A5400F6A97D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB057C020015A5400F6A97D /* ViewController.swift */; };
 		8BB057C420015A5400F6A97D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BB057C220015A5400F6A97D /* Main.storyboard */; };
@@ -19,7 +19,7 @@
 /* Begin PBXFileReference section */
 		8B0B82822007642C00DE76C2 /* splash-screen__logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "splash-screen__logo.png"; sourceTree = "<group>"; };
 		8B0B82852007675200DE76C2 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
-		8BB057BB20015A5400F6A97D /* MeilleursAgentsIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeilleursAgentsIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BB057BB20015A5400F6A97D /* Estima.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Estima.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BB057BE20015A5400F6A97D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8BB057C020015A5400F6A97D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8BB057C320015A5400F6A97D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -33,7 +33,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B0B82862007675300DE76C2 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,7 +50,7 @@
 		8BB057B220015A5300F6A97D = {
 			isa = PBXGroup;
 			children = (
-				8BB057BD20015A5400F6A97D /* MeilleursAgentsIOS */,
+				8BB057BD20015A5400F6A97D /* Estima */,
 				8BB057BC20015A5400F6A97D /* Products */,
 				8B0B82842007675200DE76C2 /* Frameworks */,
 			);
@@ -60,12 +59,12 @@
 		8BB057BC20015A5400F6A97D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8BB057BB20015A5400F6A97D /* MeilleursAgentsIOS.app */,
+				8BB057BB20015A5400F6A97D /* Estima.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8BB057BD20015A5400F6A97D /* MeilleursAgentsIOS */ = {
+		8BB057BD20015A5400F6A97D /* Estima */ = {
 			isa = PBXGroup;
 			children = (
 				8BB057BE20015A5400F6A97D /* AppDelegate.swift */,
@@ -76,15 +75,15 @@
 				8B0B82822007642C00DE76C2 /* splash-screen__logo.png */,
 				8BB057CA20015A5400F6A97D /* Info.plist */,
 			);
-			path = MeilleursAgentsIOS;
+			path = Estima;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8BB057BA20015A5300F6A97D /* MeilleursAgentsIOS */ = {
+		8BB057BA20015A5300F6A97D /* Estima */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8BB057CD20015A5400F6A97D /* Build configuration list for PBXNativeTarget "MeilleursAgentsIOS" */;
+			buildConfigurationList = 8BB057CD20015A5400F6A97D /* Build configuration list for PBXNativeTarget "Estima" */;
 			buildPhases = (
 				8BB057B720015A5300F6A97D /* Sources */,
 				8BB057B820015A5300F6A97D /* Frameworks */,
@@ -94,9 +93,9 @@
 			);
 			dependencies = (
 			);
-			name = MeilleursAgentsIOS;
+			name = Estima;
 			productName = MeilleursAgentsIOS;
-			productReference = 8BB057BB20015A5400F6A97D /* MeilleursAgentsIOS.app */;
+			productReference = 8BB057BB20015A5400F6A97D /* Estima.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -115,7 +114,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 8BB057B620015A5300F6A97D /* Build configuration list for PBXProject "MeilleursAgentsIOS" */;
+			buildConfigurationList = 8BB057B620015A5300F6A97D /* Build configuration list for PBXProject "Estima" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -128,7 +127,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8BB057BA20015A5300F6A97D /* MeilleursAgentsIOS */,
+				8BB057BA20015A5300F6A97D /* Estima */,
 			);
 		};
 /* End PBXProject section */
@@ -141,6 +140,7 @@
 				8BB057C920015A5400F6A97D /* LaunchScreen.storyboard in Resources */,
 				8B0B82832007642C00DE76C2 /* splash-screen__logo.png in Resources */,
 				8BB057C620015A5400F6A97D /* Assets.xcassets in Resources */,
+				8B1A64632008018C00F282B6 /* Info.plist in Resources */,
 				8BB057C420015A5400F6A97D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -212,6 +212,7 @@
 				COOKIE_DOMAIN = .meilleursagents.tech;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 4W82SKQNBL;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -228,9 +229,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = /Users/jordid/MAWork/EstimaApp/Estima/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.meilleursagents.Estimation;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -271,6 +274,7 @@
 				COOKIE_DOMAIN = .meilleursagents.tech;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 4W82SKQNBL;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -281,8 +285,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = /Users/jordid/MAWork/EstimaApp/Estima/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.meilleursagents.Estimation;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
@@ -296,11 +302,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4W82SKQNBL;
-				INFOPLIST_FILE = MeilleursAgentsIOS/Info.plist;
+				INFOPLIST_FILE = "$(PROJECT_DIR)/Estima/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.meilleursagents.Estimation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -312,11 +319,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4W82SKQNBL;
-				INFOPLIST_FILE = MeilleursAgentsIOS/Info.plist;
+				INFOPLIST_FILE = "$(PROJECT_DIR)/Estima/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.meilleursagents.Estimation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -325,7 +333,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8BB057B620015A5300F6A97D /* Build configuration list for PBXProject "MeilleursAgentsIOS" */ = {
+		8BB057B620015A5300F6A97D /* Build configuration list for PBXProject "Estima" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8BB057CB20015A5400F6A97D /* Debug */,
@@ -334,7 +342,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8BB057CD20015A5400F6A97D /* Build configuration list for PBXNativeTarget "MeilleursAgentsIOS" */ = {
+		8BB057CD20015A5400F6A97D /* Build configuration list for PBXNativeTarget "Estima" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8BB057CE20015A5400F6A97D /* Debug */,
