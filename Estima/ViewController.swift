@@ -31,7 +31,7 @@ class ViewController: UIViewController, UIWebViewDelegate {
         
         // Set cookie to identify Webview users
         HTTPCookieStorage.shared.cookieAcceptPolicy = HTTPCookie.AcceptPolicy.always
-        setCookie(key: "estimaWebWiew", value: "1", domain: cookieDomain)
+        setCookie(key: "estimaWebView", value: "1", domain: cookieDomain)
         setCookie(key: "ab_dispatcher", value: "99", domain: cookieDomain)
         setCookie(key: "deploy_dispatcher", value: "99", domain: cookieDomain)
         
@@ -49,6 +49,7 @@ class ViewController: UIViewController, UIWebViewDelegate {
         let pathsAuthorizedInWebview = [
             "/estimation-immobiliere/form",
             "/estimation-immobiliere/result",
+            "/estimation-immobiliere/terms",
             ]
         if navigationType == UIWebViewNavigationType.linkClicked {
             if pathsAuthorizedInWebview.contains((request.url?.relativePath)!) {
