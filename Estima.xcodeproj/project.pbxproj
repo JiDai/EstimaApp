@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		8B0B82832007642C00DE76C2 /* splash-screen__logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B0B82822007642C00DE76C2 /* splash-screen__logo.png */; };
-		8B1A64632008018C00F282B6 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8BB057CA20015A5400F6A97D /* Info.plist */; };
 		8BB057BF20015A5400F6A97D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB057BE20015A5400F6A97D /* AppDelegate.swift */; };
 		8BB057C120015A5400F6A97D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB057C020015A5400F6A97D /* ViewController.swift */; };
 		8BB057C420015A5400F6A97D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BB057C220015A5400F6A97D /* Main.storyboard */; };
@@ -26,6 +25,7 @@
 		8BB057C520015A5400F6A97D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8BB057C820015A5400F6A97D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8BB057CA20015A5400F6A97D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BF459B8200FA6960091D794 /* Estima.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Estima.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +67,7 @@
 		8BB057BD20015A5400F6A97D /* Estima */ = {
 			isa = PBXGroup;
 			children = (
+				8BF459B8200FA6960091D794 /* Estima.entitlements */,
 				8BB057BE20015A5400F6A97D /* AppDelegate.swift */,
 				8BB057C020015A5400F6A97D /* ViewController.swift */,
 				8BB057C220015A5400F6A97D /* Main.storyboard */,
@@ -111,6 +112,11 @@
 					8BB057BA20015A5300F6A97D = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -140,7 +146,6 @@
 				8BB057C920015A5400F6A97D /* LaunchScreen.storyboard in Resources */,
 				8B0B82832007642C00DE76C2 /* splash-screen__logo.png in Resources */,
 				8BB057C620015A5400F6A97D /* Assets.xcassets in Resources */,
-				8B1A64632008018C00F282B6 /* Info.plist in Resources */,
 				8BB057C420015A5400F6A97D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -229,11 +234,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = /Users/jordid/MAWork/EstimaApp/Estima/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.meilleursagents.Estimation;
+				PRODUCT_BUNDLE_IDENTIFIER = com.meilleursagents.iphone;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -285,10 +289,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = /Users/jordid/MAWork/EstimaApp/Estima/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = com.meilleursagents.Estimation;
+				PRODUCT_BUNDLE_IDENTIFIER = com.meilleursagents.iphone;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
@@ -300,12 +303,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Estima/Estima.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4W82SKQNBL;
 				INFOPLIST_FILE = "$(PROJECT_DIR)/Estima/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.meilleursagents.Estimation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 4.0;
@@ -317,12 +321,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Estima/Estima.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4W82SKQNBL;
 				INFOPLIST_FILE = "$(PROJECT_DIR)/Estima/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = com.meilleursagents.Estimation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 4.0;
